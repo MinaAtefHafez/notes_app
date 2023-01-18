@@ -19,12 +19,14 @@ class CustomTextField extends StatelessWidget {
         maxLines: maxLines ,
         decoration: InputDecoration(
           hintText: hint,
-          hintStyle: const TextStyle(color: AppConstants.primaryColor  ),
+          hintStyle: const TextStyle(color: AppConstants.primaryColor),
           enabledBorder: buildBorder() ,
           focusedBorder: buildBorder(AppConstants.primaryColor)  ,
         ),
     );
   }
+
+  
 
 
   OutlineInputBorder buildBorder([Color? color]) {
